@@ -4,7 +4,7 @@ function Footer() {
   let data = new Date().getFullYear();
 
   return (
-    <div className="flex w-full bg-gradient-to-r from-blue-950 to-slate-500 justify-center text-white border-t-2 ">
+    <div className="flex w-full bg-gradient-to-r from-blue-950 to-slate-500 justify-center text-white border-t-5 border-black ">
       <div className="flex flex-col text-center mt-4 mb-4">
         <h2 className="font-bold">
           Blog Pessoal Diego Rodrigues do Nascimento | Copyright: {data}
