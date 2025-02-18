@@ -7,7 +7,7 @@ function Home() {
         className="
           flex 
           justify-center
-        bg-gradient-to-r from-blue-950 to-slate-500"
+        bg-gradient-to-r from-black via-blue-400 to-black"
       >
         <div
           className="
