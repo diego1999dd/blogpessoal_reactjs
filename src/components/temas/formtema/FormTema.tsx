@@ -92,7 +92,7 @@ function FormTema() {
     <div
       className="w-full min-h-screen flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url('src/assets/images/imagem_1.jpeg')",
+        backgroundImage: "url('/images/imagem_1.jpeg')",
       }}
     >
       <h1 className="text-4xl text-center my-8 font-extrabold text-white ">

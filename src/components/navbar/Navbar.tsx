@@ -19,7 +19,7 @@ function Navbar() {
         <Link to="/home" className="flex font-bold space-x-3 items-center">
           <img
             className="w-10 h-10 "
-            src="src/assets/images/technology_4257487.svg"
+            src="/images/technology_4257487.svg"
             alt="Logo do React"
           />
           <h2 className="text-white font-bold">Blog Pessoal</h2>
@@ -28,7 +28,7 @@ function Navbar() {
           <ul className="flex gap-4">
             <li>
               <Link
-                to=""
+                to="/postagens"
                 className="relative text-lg font-bold before:absolute before:bottom-0 before:left-0 before:w-0 before:h-1 before:bg-white before:transition-all before:duration-300 before:ease-in-out hover:before:w-full pb-2"
               >
                 Postagens

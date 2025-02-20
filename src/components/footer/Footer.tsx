@@ -15,7 +15,7 @@ function Footer() {
             <GithubLogo size={40} />
           </a>
           <a
-            href="https://www.linkedin.com/in/diegorodriguesdonascimento99-ti/"
+            href="https://www.linkedin.com/in/diego-rodrigues-do-nascimento-b6a7641a3/"
             target="_blank"
           >
             <LinkedinLogo size={40} />

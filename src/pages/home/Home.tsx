@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import ListaPostagens from '../../components/postagens/listapostagens/ListaPostagens';
+import ModalPostagem from '../../components/postagens/modalpostagem/ModalPostagem';
 
 function Home() {
   return (
@@ -41,40 +42,22 @@ function Home() {
                 gap-4
             "
             >
-              <div
-                className="
-                  rounded-full
-                  border-white
-                  border-solid
-                  border-5
-                  py-2
-                  px-4
-                  text-white
-                  font-medium
-                  bg-black
-                  transition
-                  delay-150
-                  duration-300
-                  ease-in-out
-                  hover:-translate-y-1
-                  hover:scale-110
-                hover:bg-blue-700
-              "
-              >
-                <Link to="/">Nova Postagem</Link>
+              <div>
+                <ModalPostagem />
               </div>
             </div>
           </div>
 
           <div className="flex justify-center">
             <img
-              src="src\assets\images\Innovation-amico.svg"
+              src="\images\Innovation-amico.svg"
               alt="Imagem da Página Home"
               className="w-2/3"
             />
           </div>
         </div>
       </div>
+      <ListaPostagens />
     </>
   );
 }
