@@ -200,7 +200,7 @@ function FormPostagem() {
               visible={true}
             />
           ) : (
-            <span>{id !== undefined ? 'Atualizar' : 'Cadastrar'}</span>
+            <span>{usuario.id ? 'Atualizar' : 'Cadastrar'}</span>
           )}
         </button>
       </form>

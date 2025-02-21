@@ -52,7 +52,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to=""
+                to="/perfil"
                 className=" relative text-lg font-bold before:absolute before:bottom-0 before:left-0 before:w-0 before:h-1 before:bg-white before:transition-all before:duration-300 before:ease-in-out hover:before:w-full pb-2"
               >
                 Perfil
