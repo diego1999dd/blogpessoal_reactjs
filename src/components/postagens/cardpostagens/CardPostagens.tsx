@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Postagem from '../../../models/Postagem';
+import { PencilSimple, Trash } from '@phosphor-icons/react';
 
 interface CardPostagensProps {
   postagem: Postagem;
@@ -8,11 +9,11 @@ interface CardPostagensProps {
 function CardPostagens({ postagem }: CardPostagensProps) {
   return (
     <div
-      className="border-slate-900 border 
-            flex flex-col rounded overflow-hidden justify-between"
+      className="border-slate-900 border-8 rounded-bl-lg rounded-tl-lg
+      rounded-br-lg flex flex-col overflow-hidden justify-between"
     >
       <div>
-        <div className="flex w-full bg-indigo-400 py-2 px-4 items-center gap-4">
+        <div className="flex w-full bg-black text-white py-2 px-4 items-center gap-4">
           <img
             src={postagem.usuario?.foto}
             className="h-12 rounded-full"
@@ -22,7 +23,7 @@ function CardPostagens({ postagem }: CardPostagensProps) {
             {postagem.usuario?.nome}
           </h3>
         </div>
-        <div className="p-4 ">
+        <div className="p-4">
           <h4 className="text-lg font-semibold uppercase">{postagem.titulo}</h4>
           <p>{postagem.texto}</p>
           <p>Tema: {postagem.tema?.descricao}</p>
@@ -38,10 +39,12 @@ function CardPostagens({ postagem }: CardPostagensProps) {
       <div className="flex">
         <Link
           to={`/editarpostagem/${postagem.id}`}
-          className="w-full text-white bg-sky-900 hover:bg-green-400
+          className="w-full text-white bg-black hover:bg-green-400
     flex items-center justify-center py-2 delay-150 md:delay-150 font-medium"
         >
-          <button className=" cursor-pointer">Editar</button>
+          <button className=" cursor-pointer">
+            <PencilSimple size={25} />
+          </button>
         </Link>
 
         <Link
@@ -49,7 +52,9 @@ function CardPostagens({ postagem }: CardPostagensProps) {
           className="text-white bg-red-400 hover:bg-red-700 w-full 
 		flex items-center justify-center delay-150 md:delay-150 font-medium"
         >
-          <button className=" cursor-pointer">Deletar</button>
+          <button className=" cursor-pointer">
+            <Trash size={25} />
+          </button>
         </Link>
       </div>
     </div>

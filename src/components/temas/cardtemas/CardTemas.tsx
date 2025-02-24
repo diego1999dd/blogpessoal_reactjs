@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Tema from '../../../models/Tema';
+import { PencilSimple, Trash } from '@phosphor-icons/react';
 
 interface CardTemasProps {
   tema: Tema;
@@ -19,7 +20,9 @@ function CardTemas({ tema }: CardTemasProps) {
           className="w-full text-white bg-sky-900 hover:bg-green-400
     flex items-center justify-center py-2 delay-150 md:delay-150 font-medium"
         >
-          <button className=" cursor-pointer">Editar</button>
+          <button className=" cursor-pointer">
+            <PencilSimple size={25} />
+          </button>
         </Link>
 
         <Link
@@ -27,7 +30,9 @@ function CardTemas({ tema }: CardTemasProps) {
           className="text-white bg-red-400 hover:bg-red-700 w-full 
 		flex items-center justify-center delay-150 md:delay-150 font-medium"
         >
-          <button className=" cursor-pointer">Deletar</button>
+          <button className=" cursor-pointer">
+            <Trash size={25} />
+          </button>
         </Link>
       </div>
     </div>

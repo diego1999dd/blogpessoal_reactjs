@@ -8,7 +8,7 @@ function Home() {
         className="
           flex 
           justify-center
-        bg-gradient-to-r from-black via-blue-400 to-black"
+        bg-gradient-to-r from-black via-blue-400 to-black border-b-4 border-black"
       >
         <div
           className="
@@ -30,6 +30,7 @@ function Home() {
               className="
             text-5xl
             font-bold
+            font-family
             "
             >
               Seja Bem Vindo!
@@ -50,7 +51,7 @@ function Home() {
 
           <div className="flex justify-center">
             <img
-              src="\images\Innovation-amico.svg"
+              src="\images\Innovation-animate.svg"
               alt="Imagem da Página Home"
               className="w-2/3"
             />
